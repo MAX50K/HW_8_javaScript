@@ -13,7 +13,17 @@ const cards = [
 'Карточка-4',
 'Карточка-5',
 ];
-cards.splice(2, 1)
-cards.push('Карточка-6')
-cards[2] = "Карточка-8"
-console.log(cards);
+
+const cardToRemove = 'Карточка-3'
+
+const indexOfElement = cards.indexOf(cardToRemove);
+cards.splice(indexOfElement, 1)
+
+const cardToInsert = 'Карточка-6'
+cards.push(cardToInsert)
+
+const cardToUpdate = 'Карточка-4'
+
+const indexOfElemenx = cards.indexOf(cardToUpdate);
+cards.splice(indexOfElemenx, 1, 'Оновлена карточка-4')
+console.table(cards);
