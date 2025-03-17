@@ -1,9 +1,7 @@
 // 1
 let words = ["River", "Cloud", "Laptop", "Garden", "Butterfly"]
-let string = ""
-for (const word of words) {
-    console.log(words.join(", "));
-}
+console.log(words.join(","));
+
 console.log("---------------------------------");
 // 2
 const cards = [
